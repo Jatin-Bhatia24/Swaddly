@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Swaadly helps you discover simple, delicious recipes from around the world. Search by dish name and cook with step-by-step instructions.">
+    <title>Swaadly | Find Recipes You'll Love</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+
+    
+    <div class="main-ui">
+
+        <header>
+            <nav id="navbar">
+                <div id="brandname">
+                    <h1>🍴 Swaadly</h1>
+                </div>
+
+                <ul id="buttons">
+                    <li><a href="#" class="btn">Home</a></li>
+                    <li><a href="#FEATURED" class="btn">Recipes</a></li>
+                    <li><a href="#hii" class="btn">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="prt1">
+                <div class="text">
+                    <p class="quote">Discover Your Next</p>
+                    <p class="quote">Favourite Dish With</p>
+                    <p id="quote">Swaadly Recipes</p>
+                    <p id="description">Search thousands of dishes from kitchens around the world. Get the full ingredient list, clear step-by-step instructions and a video tutorial, all in one place.</p>
+                    <a href="#FEATURED" id="explore">Explore Recipes</a>
+                </div>
+                <img src="dish.png" alt="A plate of freshly cooked food">
+            </div>
+
+            <section class="recipies">
+                <h2 id="FEATURED">What Are We Cooking Today?</h2>
+                <p class="section_sub">Search by dish name to see ingredients, instructions and a video guide.</p>
+
+                <form class="searchbar_container" id="search_form">
+                    <input type="search" placeholder="Search a dish, e.g. Pasta, Biryani, Curry" id="recipie_name" aria-label="Search recipe" autocomplete="off">
+                    <button type="submit" id="search_icon" aria-label="Search">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="7"></circle>
+                            <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+                        </svg>
+                    </button>
+                </form>
+
+                <p id="result_message" aria-live="polite"></p>
+
+                <div class="recipiesection"></div>
+            </section>
+
+            <section class="contactarea">
+                <h2 id="hii">Get in Touch</h2>
+                <p class="section_sub">Questions, feedback or recipe ideas? We'd love to hear from you.</p>
+
+                <div class="contact">
+
+                    <div class="boxes">
+                        <h2 class="mainheading">Address</h2>
+                        <p class="details">Recipient / Company Name , Building / House Number , Street Name , City - Postal Code</p>
+                    </div>
+
+                    <div class="boxes">
+                        <h2 class="mainheading">Phone</h2>
+                        <p class="details">+XXXXX XXXXX</p>
+                    </div>
+
+                    <div class="boxes">
+                        <h2 class="mainheading">Email</h2>
+                        <p class="details">emailaddress@domain.com</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="subs">
+                <h2 id="Heading">Get new recipes in your inbox</h2>
+                <p class="subs_text">One short email a week. No spam, unsubscribe anytime.</p>
+                <form id="division">
+                    <input type="email" placeholder="Enter your email address" id="email" aria-label="Email address" required>
+                    <button type="submit" id="send">Subscribe</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 Swaadly. All rights reserved.</p>
+        </footer>
+    </div>
+
+   
+
+
+
+
+
+
+
+
+
+    <div class="recipie-page-conatiner">
+        <section class="recipie-page">
+
+            <div class="back">
+                <span>🍴 Swaadly</span>
+                <button type="button" id="close" aria-label="Close recipe">×</button>
+            </div>
+            <hr>
+
+            <div class="hero">
+                <img src="" alt="Dish image" id="image">
+
+                <div class="content">
+                    <h1 id="dish_name"></h1>
+                    <span id="dish_area"></span>
+                    <a href="#" id="wathc_tutorial" target="_blank" rel="noopener">Watch Tutorial</a>
+                </div>
+            </div>
+
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul id="ingredients_list"></ul>
+            </div>
+
+            <div class="inst ingredients">
+                <h2>Instructions</h2>
+                <p class="instructions"></p>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="project1.js"></script>
+</body>
+</html>
